@@ -1,0 +1,83 @@
+ *{
+    margin:0;
+    padding: 0;
+} 
+#titulo {
+    font-family: sans-serif; /*família da fonte */
+    color: blue; /*cor da fonte */
+}
+ #subtitulo {
+    font-family: sans-serif;
+    color: blue;
+    margin-left: 3%;
+} 
+fieldset {
+    border: 0; 
+} 
+body {
+    background-color: aqua;
+    font-family: sans-serif;
+    font-size: 1EM; /*unidade de medida.*/
+    color:rgb(0, 15, 221);
+    margin-left: 39%;
+    margin-top: 5%; 
+    justify-content: center; /* para justificar o conteúdo da página no centro */
+}
+input, select, button {
+    border-radius: 5px; /*deixar a borda redonda*/
+}
+.campo {
+    margin-bottom: 1em; /*espaçamento entre o campo*/
+}
+.campo label {
+    margin-bottom: 0.2em; /*espaçamento dos títulos*/
+    color: rgb(0, 15, 221); /*cor dos títulos*/
+    display: block; 
+} 
+ fieldset.caixa.campo {
+    float: left;
+    margin-right: 1em;
+} 
+.campo input[type="text"],.campo input[type="number"],.campo input[type="password"],.campo input[type="email"], .campo select {
+    padding: 0.4em;
+    border: 1px solid #2c67aa;
+    box-shadow:2px 2px 2px #0609c4;
+    display: block;
+}
+.caixa select option {
+    padding-right: 1em;
+} 
+.caixa input:focus, .caixa select:focus { 
+    background: white;
+}
+
+.btn {
+    font-size: 1em;
+    background: rgb(61, 71, 218);
+    border: 0;
+    margin-bottom: 1em;
+    color: #ffff;
+    padding: 0.5em 0.6em;
+    box-shadow: 2px 2px 2px #0004f5;
+    text-shadow: 1px 1px 1px #0609c4;
+    position: absolute;
+    top: 93%;
+    left: 45%;
+    margin-right: -50%;
+    translate: -50%, -50%;
+} 
+ .btn:hover  {
+    background-color: #1047dd;
+    box-shadow: inset 2px 2px 2px #0609c4;
+    text-shadow: none;
+} 
+
+/*hover: quando a gente passar o botão por cima.*/
+/*select: quando a gente selecionar.*/
+
+.btn, select{
+    cursor: pointer;
+} 
+ span {
+    color: red;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div>
+    <h1 id="titulo"><strong> Cadastro de Animais </strong></h1> 
+    <p id="subtitulo">Complete suas <span>informações</span> abaixo:</p>
+    <br>
+</div> 
+<form>
+     <fieldset class="caixa"> <!--separa um campo da página, é uma caixa da página -->
+        <div class="campo">
+            <label for="nome"> <strong>Nome</strong> </label> <!--legenda -->
+            <input type="text" name="nome" id="nome" placeholder="insira o seu Nome Completo:" required> <!--required = a pessoa não vai poder enviar o form enquanto não estiver essa informação. -->
+        </div> 
+    <div class="campo">
+            <label for="senha"><strong> Senha </strong></label>
+            <input type="password" name="senha" id="senha" placeholder="Insira a sua Senha" required>
+        </div>
+    </fieldset> 
+    <div class="campo">
+        <label> <strong>Email</strong></label>
+        <input type="email" name="email" id="email" placeholder="insira o seu email aqui" required>
+    </div>
+    <div class="campo">
+        <label> Qual animal você deseja cadastrar? </label>
+        <label>
+            <input type="radio" name="dog" value="Cachorro" checked> Cachorro 
+        </label>
+        <label>
+            <input type="radio" name="cat" value="Gato"> Gato
+        </label>
+        <label>
+            <input type="radio" name="parrot" value="papagaio"> Papagaio
+        </label>
+    </div> 
+   <div class="campo">
+        <label> Qual a idade do animal que você deseja cadastrar?</label>
+        <input type="number" name="idade" id="idade" placeholder="insira a idade do animal aqui">
+    </div> 
+    <div class="campo">
+        <label for="porteAnimal">Qual o porte do animal?</label>
+        <select id="porteAnimal">
+            <option selected disabled value=""> Selecione uma opção</option>
+            <option> Pequeno Porte</option>
+            <option> Médio Porte</option>
+            <option> Grande Porte</option>
+        </select>
+    </div> 
+    -<button type="submit" class="btn">Concluido</button>
+</form>
+</body>
+</html>
